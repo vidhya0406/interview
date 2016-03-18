@@ -5,10 +5,7 @@ This repository contains the following:
 1. test_cases.xlsx - Test cases for the test task
 2. feature - Feature directory has the test suites and the automation scripts to execute them
 
-Package requirements:
-1. Python2.7
-2. Splinter [python2.7]
-3. Lettuce [python 2.7]
+Package requirements: Python2.7, splinter, lettuce
 
 The test cases are automated using lettuce and splinter.
 Feature directory has:
