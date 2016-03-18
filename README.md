@@ -6,9 +6,9 @@ This repository contains the following:
 2. feature - Feature directory has the test suites and the automation scripts to execute them
 
 Package requirements:
-    * Python2.7
-    * Splinter [python2.7]
-    * Lettuce [python 2.7]
+1. Python2.7
+2. Splinter [python2.7]
+3. Lettuce [python 2.7]
 
 The test cases are automated using lettuce and splinter.
 Feature directory has:
