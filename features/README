@@ -1,1 +1,14 @@
-Sample
+TEST SCENARIOS
+
+Each feature file here represents the feature under test. 
+
+Steps.py file translates the steps from lettuce to python script.
+
+Ways to run: 
+
+1. Run a specific feature file
+            lettuce <feature_file_name>.feature 
+2. Run a scenario in a feature
+            lettuce <feature_file_name>.feature -s <scenario number>
+3. Run all the features 
+            lettuce
