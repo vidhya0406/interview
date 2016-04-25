@@ -1,4 +1,4 @@
-# NEWS360 test task
+# Test Task
 
 This repository contains the following:
 
