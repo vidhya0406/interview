@@ -1,0 +1,65 @@
+Bug Name: Sign-in compromise on invariably long email
+Bug ID: 3218
+Area Path: Login > Sign-in with email
+Build Number: 19.1.1
+Severity: HIGH
+Priority: HIGH
+Assigned to: Unassigned
+Reported By: Vidhya R
+Reported On: 21-03-2016
+Reason: Bug
+Status: New
+Browser: Google Chrome
+
+Description:
+Site's secure sign in is compromised while tying to sign in with an email address that is unusaully long
+
+Steps To Reproduce:
+1) Go to www.abc_web_under_test.com
+2) Navigate to the Login -> Sign-in with email
+3) Fill email address with: ahrfwehuiwehfuihweriytweuiyhuirywiahaejhrjuiyweiyriwweiytt4uiyteiyriweyiqasfewerwerqefwerfwerferdqefrewyrieiuqeyrafffffffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdgquuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuaaaaaaaaaagddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd@gmail.com
+4) Fill password with: asdqre
+5) Click 'Sign-in' button
+6) Website tries to authenticate and does not give any results
+7) Perform a page refresh
+8) After refresh, the website's login is bypassed and it accesses the dashboard view
+
+Expected result: Length of email address has to be checked before authenticating the user.
+
+Automation Status: Automated
+
+Script path: Features/Signin.feature
+
+Bug Name: Sign-up with email not waiting for confirmation of email address
+Bug ID: 3981
+Area Path: Signup > Signup with email
+Build Number: 19.1.4
+Severity: HIGH
+Priority: HIGH
+Assigned to: Unassigned
+Reported By: Vidhya R
+Reported On: 22-03-2016
+Reason: Feature Request
+Status: New
+Browser: Google Chrome
+
+Description:
+
+When user signs up with email address, the site does not wait for validation of the email before giving access to the website services
+
+Steps To Reproduce:
+1) Go to www.abc_web_under_test.com
+2) Navigate to the Sign up -> Sign up with email
+3) Fill in email address with: abc@xyz.com
+4) Fill password with: asdqre
+5) Fill in confirm password with: asdqre
+6) Click 'Sign-up' button
+7) Website directs you to website dashboard services instead of waiting for email address confirmation from user
+
+Expected result: On sign up with new email address, the user has to get a verification link to the provided mail address.
+The website should direct to the dashboard only after verifying the email address
+
+Automation Status: Automated
+
+Script path: Features/Signup.feature
+
